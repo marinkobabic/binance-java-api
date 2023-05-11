@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public enum FilterType {
   // Symbol
+  NOTIONAL,
   PRICE_FILTER,
   LOT_SIZE,
   MIN_NOTIONAL,
