@@ -8,9 +8,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public enum FilterType {
   // Symbol
-  NOTIONAL,
   PRICE_FILTER,
   LOT_SIZE,
+  NOTIONAL,
   MIN_NOTIONAL,
   MAX_NUM_ORDERS,
   MAX_ALGO_ORDERS,
@@ -23,5 +23,8 @@ public enum FilterType {
 
   // Exchange
   EXCHANGE_MAX_NUM_ORDERS,
-  EXCHANGE_MAX_ALGO_ORDERS
+  EXCHANGE_MAX_ALGO_ORDERS,
+  
+  TRAILING_DELTA,
+  PERCENT_PRICE_BY_SIDE
 }
